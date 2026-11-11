@@ -1,0 +1,17 @@
+<resources>
+ <string name="places_search">Encontrar hotéis e pousadas</string>
+ <string name="places_notice">Conheça hospedagens no destino. Esta lista não consulta disponibilidade por datas, hóspedes ou diárias.</string>
+ <string name="places_loading">Buscando hospedagens…</string>
+ <string name="places_empty">Nenhuma hospedagem encontrada para este destino.</string>
+ <string name="places_count">%1$d hospedagens encontradas</string>
+ <string name="places_error">Não foi possível consultar o Google Places (código %1$d). Confira a conexão e a autorização da chave para Places API (New).</string>
+ <string name="places_missing">Configure a chave do Google Places para pesquisar hospedagens.</string>
+ <string name="places_maps">Localização e avaliações no Google Maps</string>
+ <string name="places_no_rating">Ainda sem nota informada</string>
+ <string name="places_rating">Nota %1$.1f de 5 · %2$d avaliações</string>
+ <string name="places_no_price">Preço: consultar com a hospedagem</string>
+ <string name="places_price">Nível de preço: %1$s · não é valor de diária</string>
+ <string name="places_unnamed">Hospedagem</string>
+ <string name="places_no_address">Endereço não informado</string>
+ <string name="places_google">Google Maps</string>
+</resources>

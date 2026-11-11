@@ -1,0 +1,6 @@
+<resources>
+    <plurals name="trip_day_count">
+        <item quantity="one">%d dia</item>
+        <item quantity="other">%d dias</item>
+    </plurals>
+</resources>

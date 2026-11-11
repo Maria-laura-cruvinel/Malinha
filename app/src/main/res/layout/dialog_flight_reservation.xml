@@ -1,0 +1,15 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <EditText android:id="@+id/reservation_airline" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/flight_airline" android:inputType="textCapWords" android:maxLength="80"/>
+        <EditText android:id="@+id/reservation_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/flight_number" android:inputType="textCapCharacters" android:maxLength="16"/>
+        <AutoCompleteTextView android:id="@+id/reservation_origin" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/search_origin" android:singleLine="true" android:inputType="textCapWords" android:maxLength="120"/>
+        <AutoCompleteTextView android:id="@+id/reservation_destination" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/search_destination" android:singleLine="true" android:inputType="textCapWords" android:maxLength="120"/>
+        <Button android:id="@+id/reservation_departure" style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/flight_reservation_departure"/>
+        <Button android:id="@+id/reservation_arrival" style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/flight_reservation_arrival"/>
+        <EditText android:id="@+id/reservation_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/flight_localizer" android:inputType="textPassword" android:importantForAutofill="no" android:maxLength="32"/>
+        <CheckBox android:id="@+id/reservation_reveal" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/flight_show_localizer"/>
+        <EditText android:id="@+id/reservation_notes" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:hint="@string/flight_notes" android:inputType="textMultiLine|textCapSentences" android:maxLength="500"/>
+    </LinearLayout>
+</ScrollView>

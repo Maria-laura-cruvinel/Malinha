@@ -1,0 +1,2 @@
+# Only the proxy address belongs in the Android app. Never put the token here.
+FLIGHTS_PROXY_URL=http://127.0.0.1:8787/flights

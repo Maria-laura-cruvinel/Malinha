@@ -1,0 +1,11 @@
+<resources>
+ <string name="internal_map_title">Mapa do local</string>
+ <string name="map_not_configured">O mapa interno ainda não está disponível. Use Traçar rota para consultar o local no Google Maps.</string>
+ <string name="map_play_services">O mapa interno precisa do Google Play Services atualizado. Você pode usar Traçar rota.</string>
+ <string name="map_searching">Procurando o local…</string>
+ <string name="map_not_found">Não foi possível localizar este lugar. Tente buscar novamente.</string>
+ <string name="map_choose_result">Selecione o endereço correspondente</string>
+ <string name="map_result">Endereço selecionado: %1$s</string>
+ <string name="map_retry">Buscar novamente</string>
+ <string name="map_open">Ver no mapa</string>
+</resources>

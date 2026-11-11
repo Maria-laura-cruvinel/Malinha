@@ -1,0 +1,12 @@
+<resources>
+ <string name="new_trip">Nova viagem</string><string name="destination">Destino</string><string name="destination_hint">Cidade ou lugar que você quer conhecer</string>
+ <string name="start_date">Data de início</string><string name="end_date">Data de término</string><string name="pick_date">Selecionar data</string>
+ <string name="budget">Orçamento estimado (R$)</string><string name="budget_hint">Ex.: 1.500,00</string>
+ <string name="interests">O que você quer descobrir?</string><string name="interests_hint">Selecione um ou mais interesses.</string>
+ <string name="culture">Cultura e história</string><string name="food">Gastronomia</string><string name="nature">Natureza</string><string name="beach">Praias</string><string name="shopping">Compras</string><string name="fun">Entretenimento</string>
+ <string name="create_itinerary">Criar roteiro</string><string name="back">Voltar</string>
+ <string name="error_destination">Informe o destino da viagem.</string><string name="error_dates">Selecione as datas de início e término.</string><string name="error_date_order">A data de término deve ser igual ou posterior ao início.</string>
+ <string name="error_budget">Informe um orçamento válido, maior ou igual a zero, com até duas casas decimais.</string><string name="error_interests">Selecione pelo menos um interesse.</string>
+ <string name="manual_title">Montar roteiro</string><string name="draft_notice">Planejamento iniciado! Na próxima etapa, você poderá organizar os dias e adicionar suas atividades aqui. Este rascunho ainda não foi salvo.</string>
+ <string name="edit_planning">Editar planejamento</string><string name="trip_dates">%1$s a %2$s</string><string name="trip_budget">Orçamento: %1$s</string><string name="trip_interests">Interesses: %1$s</string>
+</resources>

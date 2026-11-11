@@ -1,0 +1,5 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/city_suggestions_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/bg_card" android:visibility="gone">
+ <TextView android:id="@+id/city_search_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:accessibilityLiveRegion="polite" android:textSize="15sp"/>
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/city_suggestions" android:layout_width="match_parent" android:layout_height="200dp" android:nestedScrollingEnabled="true"/>
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:padding="12dp" android:fontFamily="sans" android:text="@string/places_google" android:textSize="16sp" android:textColor="#5E5E5E"/>
+</LinearLayout>

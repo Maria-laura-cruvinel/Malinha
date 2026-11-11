@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/planning_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/cream"
+        app:contentInsetStart="20dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:gravity="center_vertical" android:orientation="horizontal">
+            <ImageView android:layout_width="36dp" android:layout_height="36dp"
+                android:importantForAccessibility="no" android:src="@drawable/mascot"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" android:text="@string/brand"
+                android:fontFamily="sans-serif-rounded" android:textColor="@color/petrol"
+                android:textSize="26sp" android:textStyle="bold"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minHeight="112dp" android:gravity="center_vertical"
+                android:background="@drawable/bg_home_welcome" android:padding="16dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView style="@style/Malinha.HomeHeading" android:text="@string/welcome"/>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp" android:text="@string/invite"
+                        android:textColor="@color/petrol" android:textSize="16sp"/>
+                </LinearLayout>
+                <ImageView android:layout_width="76dp" android:layout_height="76dp"
+                    android:layout_marginStart="8dp" android:importantForAccessibility="no"
+                    android:scaleType="fitCenter" android:src="@drawable/destination_rio"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:baselineAligned="false" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/shortcut_plan" style="@style/Malinha.HomeShortcut"
+                    android:contentDescription="@string/label_plan">
+                    <ImageView style="@style/Malinha.HomeShortcutIcon" android:src="@drawable/ic_plan"/>
+                    <TextView style="@style/Malinha.HomeShortcutLabel" android:text="@string/label_plan"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/shortcut_trips" style="@style/Malinha.HomeShortcut"
+                    android:layout_marginStart="10dp" android:contentDescription="@string/label_trips">
+                    <ImageView style="@style/Malinha.HomeShortcutIcon" android:src="@drawable/ic_trips"/>
+                    <TextView style="@style/Malinha.HomeShortcutLabel" android:text="@string/label_trips"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:baselineAligned="false" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/shortcut_hotels" style="@style/Malinha.HomeShortcut"
+                    android:contentDescription="@string/label_hotels">
+                    <ImageView style="@style/Malinha.HomeShortcutIcon" android:src="@drawable/ic_hotels"/>
+                    <TextView style="@style/Malinha.HomeShortcutLabel" android:text="@string/label_hotels"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/shortcut_exchange" style="@style/Malinha.HomeShortcut"
+                    android:layout_marginStart="10dp" android:contentDescription="@string/label_exchange">
+                    <ImageView style="@style/Malinha.HomeShortcutIcon" android:src="@drawable/ic_exchange"/>
+                    <TextView style="@style/Malinha.HomeShortcutLabel" android:text="@string/label_exchange"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:baselineAligned="false" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/shortcut_flights" style="@style/Malinha.HomeShortcut"
+                    android:contentDescription="@string/label_flights">
+                    <ImageView style="@style/Malinha.HomeShortcutIcon" android:src="@drawable/ic_flights"/>
+                    <TextView style="@style/Malinha.HomeShortcutLabel" android:text="@string/label_flights"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/shortcut_explore" style="@style/Malinha.HomeShortcut"
+                    android:layout_marginStart="10dp" android:contentDescription="@string/label_explore">
+                    <ImageView style="@style/Malinha.HomeShortcutIcon" android:src="@drawable/ic_explore"/>
+                    <TextView style="@style/Malinha.HomeShortcutLabel" android:text="@string/label_explore"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView style="@style/Malinha.HomeHeading" android:layout_marginTop="24dp"
+                android:text="@string/home_adventures" android:textSize="21sp"/>
+            <LinearLayout android:id="@+id/home_empty" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                android:background="@drawable/bg_card" android:orientation="vertical"
+                android:padding="16dp" android:visibility="gone">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/home_empty" android:textColor="@color/petrol" android:textSize="16sp"/>
+                <com.google.android.material.button.MaterialButton android:id="@+id/home_empty_plan"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:text="@string/label_plan"
+                    android:textColor="@color/petrol" app:backgroundTint="@color/sand"/>
+            </LinearLayout>
+            <TextView android:id="@+id/home_trip_status" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                android:textColor="@color/petrol" android:accessibilityLiveRegion="polite"
+                android:visibility="gone"/>
+            <HorizontalScrollView android:id="@+id/home_trip_scroll" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                android:visibility="gone">
+                <LinearLayout android:id="@+id/home_trip_cards" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:orientation="horizontal"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:background="@color/cream"
+        android:elevation="4dp" app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav"/>
+</LinearLayout>

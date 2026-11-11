@@ -1,0 +1,20 @@
+<resources>
+ <string name="local_explore">Buscar atrações e restaurantes</string>
+ <string name="local_place">Local</string>
+ <string name="local_search">Buscar locais</string>
+ <string name="local_category">O que deseja encontrar?</string>
+ <string-array name="local_categories"><item>Pontos turísticos</item><item>Restaurantes</item><item>Museus</item><item>Parques</item><item>Cafés</item></string-array>
+ <string name="local_intro">Escolha uma cidade e uma categoria. Consulte os horários antes da visita; eles podem mudar.</string>
+ <string name="local_empty">Nenhum local encontrado. Tente outra cidade ou categoria.</string>
+ <string name="local_loading">Buscando locais…</string>
+ <string name="local_count">%1$d locais encontrados</string>
+ <string name="local_error">Não foi possível consultar os locais. Verifique a conexão e o acesso da chave ao Places API (New).</string>
+ <string name="local_hours">Consultar horários</string>
+ <string name="local_hours_loading">Consultando horários…</string>
+ <string name="local_hours_missing">Horários não informados. Confirme diretamente com o local.</string>
+ <string name="local_hours_current">Horários dos próximos sete dias, no horário local:</string>
+ <string name="local_hours_regular">Horários habituais, no horário local; feriados podem alterar o funcionamento:</string>
+ <string name="local_directions">Traçar rota no Google Maps</string>
+ <string name="local_mode">Como deseja ir?</string>
+ <string-array name="local_modes"><item>A pé</item><item>De carro</item><item>Transporte público</item></string-array>
+</resources>

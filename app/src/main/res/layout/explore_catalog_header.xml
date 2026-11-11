@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/discover_headline" android:textColor="@color/petrol" android:textSize="28sp" android:textStyle="bold"/>
+    <EditText android:id="@+id/catalog_query" android:layout_width="match_parent" android:layout_height="48dp"
+        android:layout_marginTop="12dp" android:paddingHorizontal="12dp" android:background="@drawable/bg_field"
+        android:hint="@string/catalog_search" android:inputType="textCapWords" android:maxLength="120" android:singleLine="true"/>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none">
+        <com.google.android.material.chip.ChipGroup android:id="@+id/discovery_categories"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:singleLine="true" app:singleSelection="true" app:selectionRequired="true"/>
+    </HorizontalScrollView>
+    <Spinner android:id="@+id/catalog_region" android:layout_width="wrap_content" android:layout_height="48dp"
+        android:contentDescription="@string/catalog_region" android:entries="@array/catalog_regions"/>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/explore_places" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/local_explore"/>
+            <Button android:id="@+id/explore_country_guide" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/country_guide"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:id="@+id/catalog_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="12dp" android:textColor="@color/petrol" />
+</LinearLayout>

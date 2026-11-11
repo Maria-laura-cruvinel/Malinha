@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+ <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/coral" app:titleTextColor="@color/cream"/>
+ <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:text="@string/places_notice" android:textSize="16sp"/>
+ <TextView android:id="@+id/hotel_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp" android:accessibilityLiveRegion="polite" android:textSize="16sp"/>
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/hotel_results" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="16dp"/>
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:padding="16dp" android:text="@string/places_google" android:fontFamily="sans" android:textColor="#5E5E5E" android:textSize="16sp"/>
+ <Button android:id="@+id/hotel_retry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:text="@string/flight_retry"/>
+</LinearLayout>

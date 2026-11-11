@@ -1,0 +1,44 @@
+<resources>
+    <string name="home_adventures">Suas próximas aventuras</string>
+    <string name="home_empty">Sua próxima aventura começa aqui!</string>
+    <string name="home_trip_dates">%1$s – %2$s</string>
+    <string name="home_continue">Continuar planejando</string>
+    <style name="Malinha.HomeHeading" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-rounded</item>
+        <item name="android:textColor">@color/petrol</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Malinha.HomeShortcut" parent="">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minHeight">102dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/bg_card</item>
+        <item name="android:elevation">1dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="Malinha.HomeShortcutIcon" parent="">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:tint">@color/coral</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+    <style name="Malinha.HomeShortcutLabel" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans-serif-rounded</item>
+        <item name="android:textColor">@color/petrol</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+</resources>

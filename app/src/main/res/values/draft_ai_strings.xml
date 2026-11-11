@@ -1,0 +1,28 @@
+<resources>
+    <string name="draft_ai_title">Sugerir atividades com IA</string>
+    <string name="draft_ai_loading">Consultando o Gemini…</string>
+    <string name="ai_sheet_title">Sugestões da Malinha ✨</string>
+    <string name="ai_city_day">%1$s · Dia %2$d</string>
+    <string name="ai_structured_prompt">Sugira até três atrações turísticas reais na cidade ou destino %1$s. Use somente estas categorias: %2$s. Exclua todos os nomes desta lista JSON: %3$s. Escreva uma descrição breve em português, estime a duração em minutos e sugira um horário local HH:mm. Inclua custo aproximado e moeda apenas se houver informação. Não inclua Markdown, links ou URLs.</string>
+    <string name="ai_more">Sugerir mais atrações</string>
+    <string name="ai_select">Selecionar atração</string>
+    <string name="ai_select_named">Selecionar %1$s</string>
+    <string name="ai_details">Ver detalhes</string>
+    <string name="ai_not_informed">Não informado</string>
+    <string name="ai_detail_text">%1$s, %2$s\n\n%3$s\n\nDuração estimada: %4$d min\nCusto aproximado: %5$s\nHorário sugerido: %6$s\n\nConfirme custos e horários com o local. O custo pode ser preenchido ao editar a atividade.</string>
+    <string name="ai_no_new">O Gemini não trouxe novas atrações. Você pode tentar de novo ou usar as sugestões atuais.</string>
+    <string name="ai_added_batch">%1$d atividades adicionadas. Confira os horários e toque em Salvar roteiro.</string>
+    <plurals name="ai_add_count">
+        <item quantity="one">Adicionar %d atividade</item>
+        <item quantity="other">Adicionar %d atividades</item>
+    </plurals>
+    <string name="draft_ai_duplicate">Uma atração selecionada já está neste dia. Desmarque-a para continuar.</string>
+    <string name="draft_ai_no_slot">Não há espaço para todas as atividades selecionadas entre 9h e 22h. Desmarque uma atração ou ajuste o roteiro.</string>
+    <string name="draft_ai_error">O Gemini não concluiu a consulta. Tente novamente.</string>
+    <string name="draft_ai_app_check">O App Check não conseguiu autorizar este emulador. Cadastre o token debug atual no Firebase Console e reabra o app.</string>
+    <string name="draft_ai_network">Falha de conexão. Confira a internet no emulador e tente novamente.</string>
+    <string name="draft_ai_quota">A cota ou o limite de requisições do Gemini foi atingido. Tente novamente mais tarde.</string>
+    <string name="draft_ai_model">O modelo Gemini não está disponível para este projeto.</string>
+    <string name="draft_ai_permission">O projeto não autorizou a consulta ao Gemini. Confira o Firebase AI Logic e a Gemini Developer API no Firebase Console.</string>
+    <string name="draft_ai_empty">O Gemini não retornou sugestões. Tente novamente.</string>
+</resources>

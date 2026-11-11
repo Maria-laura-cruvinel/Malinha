@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:paddingBottom="8dp">
+    <TextView android:id="@+id/draft_destination" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingVertical="12dp"
+        android:textColor="@color/petrol" android:textSize="22sp" android:textStyle="bold"/>
+    <include layout="@layout/include_commons_photo"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/saved_notice" android:textSize="14sp"/>
+</LinearLayout>

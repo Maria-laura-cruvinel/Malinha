@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="268dp" android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp" android:layout_marginBottom="4dp"
+    android:padding="14dp" android:orientation="vertical" android:background="@drawable/bg_card">
+    <ImageView android:id="@+id/commons_photo"
+        android:layout_width="match_parent" android:layout_height="180dp"
+        android:background="@drawable/bg_explore_photo" android:clipToOutline="true"
+        android:scaleType="fitCenter" android:src="@drawable/destination_generic"
+        android:importantForAccessibility="no"/>
+    <TextView android:id="@+id/commons_credit"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="32dp" android:gravity="center_vertical"
+        android:textColor="@color/petrol" android:textSize="11sp" android:visibility="gone"/>
+    <TextView android:id="@+id/destination_name"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:fontFamily="sans-serif-rounded"
+        android:textColor="@color/petrol" android:textSize="22sp" android:textStyle="bold"/>
+    <TextView android:id="@+id/destination_description"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:textColor="@color/petrol" android:textSize="16sp"/>
+    <Button android:id="@+id/destination_favorite"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="56dp" android:layout_height="48dp"
+        android:layout_gravity="end" android:padding="0dp" android:textSize="22sp"/>
+</LinearLayout>

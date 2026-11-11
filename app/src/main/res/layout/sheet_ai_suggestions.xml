@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/bg_ai_sheet" android:padding="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical">
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:text="@string/ai_sheet_title" android:textColor="@color/petrol"
+            android:textSize="22sp" android:textStyle="bold"/>
+        <Button android:id="@+id/ai_close" style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/close_dialog"/>
+    </LinearLayout>
+    <TextView android:id="@+id/ai_city" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textColor="@color/petrol" android:textSize="17sp" android:textStyle="bold"/>
+    <LinearLayout android:id="@+id/ai_hero" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:layout_marginTop="8dp">
+        <ImageView android:id="@+id/commons_photo" android:layout_width="match_parent" android:layout_height="80dp"
+            android:background="@drawable/bg_ai_sheet" android:clipToOutline="true" android:importantForAccessibility="no"/>
+        <TextView android:id="@+id/commons_credit" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="36dp" android:gravity="center_vertical" android:textSize="12sp"
+            android:textColor="@color/petrol" android:visibility="gone"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/ai_progress" style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent" android:layout_height="8dp" android:indeterminate="true"
+        android:indeterminateTint="@color/coral" android:visibility="gone"/>
+    <TextView android:id="@+id/ai_status" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingVertical="4dp" android:accessibilityLiveRegion="polite" android:textColor="@color/petrol"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/ai_list"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:clipToPadding="false" android:scrollbars="vertical"/>
+    <Button android:id="@+id/ai_more" style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="48dp" android:text="@string/ai_more"/>
+    <Button android:id="@+id/ai_add_selected" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="48dp" android:backgroundTint="@color/coral" android:textColor="@color/petrol"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/cream">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="@color/coral" app:titleTextColor="@color/cream"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/itinerary_days"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/cream" android:contentDescription="@string/choose_day"
+        app:tabMode="scrollable" app:tabIndicatorColor="@color/coral"
+        app:tabTextColor="@color/petrol" app:tabSelectedTextColor="@color/petrol"
+        app:tabIndicatorHeight="4dp"/>
+    <TextView android:id="@+id/itinerary_day_count"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="end" android:paddingHorizontal="16dp" android:paddingVertical="4dp"
+        android:textColor="@color/petrol" android:accessibilityLiveRegion="polite"/>
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/itinerary_pager"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:id="@+id/draft_ai_suggest" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginHorizontal="16dp"
+        android:visibility="gone" android:text="@string/draft_ai_title"/>
+    <Button android:id="@+id/save_trip" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:text="@string/save_trip"/>
+    <Button android:id="@+id/add_activity" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="8dp" android:text="@string/add_activity"/>
+</LinearLayout>

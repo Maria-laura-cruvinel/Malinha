@@ -1,0 +1,6 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+ <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/coral" app:title="@string/app_name" app:titleTextColor="@color/petrol" app:navigationIconTint="@color/petrol"/>
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/destinations_list"
+     android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+     android:padding="16dp" android:clipToPadding="false" android:scrollbars="vertical"/>
+</LinearLayout>

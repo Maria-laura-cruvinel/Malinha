@@ -1,0 +1,8 @@
+<resources>
+    <string name="ready_destination">Ver roteiro pronto</string>
+    <string name="ready_browse">Ver roteiros prontos</string>
+    <string name="ready_title">Roteiro de %1$d dias · %2$s</string>
+    <string name="ready_day">Dia %1$d</string>
+    <string name="ready_pick_date">Escolher data de início</string>
+    <string name="ready_notice">Os horários são sugestões. Confira a abertura e os ingressos de cada local. Você pode ajustar as atividades e salvar sua cópia.</string>
+</resources>

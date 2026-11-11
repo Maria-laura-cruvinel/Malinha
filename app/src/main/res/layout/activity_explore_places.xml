@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+ <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/coral" app:titleTextColor="@color/cream"/>
+ <ScrollView android:id="@+id/local_scroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true" android:fadeScrollbars="false">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/local_intro" android:textSize="16sp"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/destination" android:labelFor="@+id/local_destination" android:textStyle="bold" android:textSize="17sp"/>
+   <EditText android:id="@+id/local_destination" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:singleLine="true" android:maxLength="120" android:inputType="textCapWords" android:background="@drawable/bg_field" android:hint="@string/destination_hint" android:textSize="17sp"/>
+   <include layout="@layout/include_city_suggestions"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/local_category" android:labelFor="@+id/local_category" android:textSize="17sp"/>
+   <Spinner android:id="@+id/local_category" android:layout_width="match_parent" android:layout_height="56dp" android:entries="@array/local_categories"/>
+   <Button android:id="@+id/local_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/local_search"/>
+  </LinearLayout>
+ </ScrollView>
+ <TextView android:id="@+id/local_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12dp" android:accessibilityLiveRegion="polite" android:textSize="16sp"/>
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/local_results" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:paddingHorizontal="16dp" android:scrollbars="vertical" android:visibility="gone"/>
+ <Button android:id="@+id/local_first" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:text="@string/local_first"/>
+ <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:padding="16dp" android:fontFamily="sans" android:text="@string/places_google" android:textSize="16sp" android:textColor="#5E5E5E"/>
+</LinearLayout>

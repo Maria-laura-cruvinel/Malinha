@@ -1,0 +1,4 @@
+<!-- Copy to app/src/debug/res/values/country_api_local.xml for a local demonstration. -->
+<resources>
+ <string name="rest_countries_api_key" translatable="false">COLE_SUA_CHAVE_REST_COUNTRIES_V5</string>
+</resources>

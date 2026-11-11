@@ -1,0 +1,27 @@
+<resources>
+ <string name="catalog_search">Buscar cidade ou país</string>
+ <string name="catalog_region">Região do catálogo</string>
+ <string-array name="catalog_regions"><item>Todas as regiões</item><item>América do Sul</item><item>América do Norte</item><item>Europa</item><item>Ásia</item><item>África</item><item>Oceania</item></string-array>
+ <string name="catalog_note">Veja sugestões do catálogo offline ou digite uma cidade ou país para planejar sua viagem. As fotos são carregadas quando há uma correspondência no Wikimedia Commons.</string>
+ <string name="catalog_count">%1$d destinos no catálogo filtrado</string>
+ <string name="catalog_empty">Nenhum destino do catálogo corresponde ao filtro. Você ainda pode planejar a cidade digitada.</string>
+ <string name="catalog_plan_typed">Planejar destino digitado</string>
+ <string name="catalog_general_description">Explore atrações, gastronomia e passeios e monte seu próprio roteiro.</string>
+ <string name="catalog_salvador">Salvador, Brasil</string><string name="catalog_recife">Recife, Brasil</string>
+ <string name="catalog_florianopolis">Florianópolis, Brasil</string><string name="catalog_foz">Foz do Iguaçu, Brasil</string>
+ <string name="catalog_buenos_aires">Buenos Aires, Argentina</string><string name="catalog_lima">Lima, Peru</string>
+ <string name="catalog_mexico">Cidade do México, México</string><string name="catalog_new_york">Nova York, Estados Unidos</string>
+ <string name="catalog_lisbon">Lisboa, Portugal</string><string name="catalog_rome">Roma, Itália</string>
+ <string name="catalog_london">Londres, Reino Unido</string><string name="catalog_barcelona">Barcelona, Espanha</string>
+ <string name="catalog_seoul">Seul, Coreia do Sul</string><string name="catalog_bangkok">Bangkok, Tailândia</string>
+ <string name="catalog_singapore">Singapura, Singapura</string><string name="catalog_istanbul">Istambul, Turquia</string>
+ <string name="catalog_cape_town">Cidade do Cabo, África do Sul</string><string name="catalog_marrakesh">Marrakech, Marrocos</string>
+ <string name="catalog_sydney">Sydney, Austrália</string><string name="catalog_auckland">Auckland, Nova Zelândia</string>
+ <string name="local_more">Carregar mais</string>
+ <string name="local_first">Voltar ao primeiro resultado</string>
+ <string name="local_edit_search">Alterar busca</string>
+ <string name="local_more_loading">Carregando mais locais…</string>
+ <string name="local_more_error">Não foi possível carregar a próxima página. Os resultados anteriores continuam disponíveis.</string>
+ <string name="local_results_end">O Google não enviou outra página para esta busca.</string>
+ <string name="local_pagination_note">Para encontrar outros locais, busque por uma categoria como Museus ou Parques, ou informe um bairro junto com a cidade.</string>
+</resources>

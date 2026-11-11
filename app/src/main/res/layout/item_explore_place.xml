@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:padding="16dp" android:orientation="vertical" android:background="@drawable/bg_card">
+ <TextView android:id="@+id/local_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="22sp" android:textStyle="bold"/>
+ <TextView android:id="@+id/local_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12dp" android:textSize="16sp"/>
+ <TextView android:id="@+id/local_attributions" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="14sp"/>
+ <Button android:id="@+id/local_map" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/map_open"/>
+ <Button android:id="@+id/local_hours" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/local_hours"/>
+ <Button android:id="@+id/local_directions" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/local_directions"/>
+</LinearLayout>

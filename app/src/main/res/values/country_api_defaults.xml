@@ -1,0 +1,4 @@
+<resources>
+ <!-- Override only in an ignored debug resource file. Do not put a private key in shared source. -->
+ <string name="rest_countries_api_key" translatable="false"></string>
+</resources>

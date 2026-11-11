@@ -1,0 +1,38 @@
+<resources>
+    <string name="discover_title">Explorar destinos</string>
+    <string name="discover_headline">Para onde dá vontade de ir?</string>
+    <string name="discover_ready">Com roteiros prontos</string>
+    <string name="discover_nearby">Perto do Brasil</string>
+    <string name="discover_outdoor">Ao ar livre</string>
+    <string name="discover_cities">Descobertas urbanas</string>
+    <string name="discover_use">Usar como base do roteiro</string>
+    <string name="discover_season">Quando ir</string>
+    <string name="discover_highlights">O que conhecer</string>
+    <string name="discover_highlights_default">Consulte atrações e restaurantes deste destino.</string>
+    <string name="add_favorite">Favoritar destino</string>
+    <string name="remove_favorite">Remover dos favoritos</string>
+    <string name="season_mild">Considere a primavera ou o outono para passeios ao ar livre.</string>
+    <string name="season_local">Confira a época de chuvas e o clima para as atividades que você quer fazer.</string>
+    <string name="wizard_title">Planejar viagem</string>
+    <string name="wizard_progress">Passo %1$d de 4 · %2$s</string>
+    <string name="wizard_continue">Continuar</string>
+    <string name="wizard_dates">Datas</string>
+    <string name="wizard_style">Viajantes e estilo</string>
+    <string name="wizard_route">Roteiro</string>
+    <string name="wizard_weekend">Este fim de semana</string>
+    <string name="wizard_holiday">Próximo feriado</string>
+    <string name="wizard_later">Daqui a 30 dias</string>
+    <string name="wizard_nights_pending">Escolha as datas para calcular a duração.</string>
+    <string name="wizard_travelers">Viajantes</string>
+    <string name="wizard_less">Diminuir quantidade de viajantes</string>
+    <string name="wizard_more">Aumentar quantidade de viajantes</string>
+    <string name="wizard_pace">Ritmo da viagem</string>
+    <string name="wizard_holiday_error">Feriado indisponível. Escolha as datas no calendário.</string>
+    <string-array name="discovery_categories">
+        <item>Todas</item><item>Praia</item><item>Cidade</item><item>Natureza</item><item>Gastronomia</item><item>Aventura</item>
+    </string-array>
+    <string-array name="wizard_paces">
+        <item>Tranquilo</item><item>Equilibrado</item><item>Intenso</item>
+    </string-array>
+    <plurals name="wizard_nights"><item quantity="one">%d noite</item><item quantity="other">%d noites</item></plurals>
+</resources>

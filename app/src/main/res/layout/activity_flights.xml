@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/cream">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize" android:background="@color/coral" app:titleTextColor="@color/petrol"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <Button android:id="@+id/flight_reservations" style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/flight_reservations"/>
+            <Button android:id="@+id/flight_airport_credits" style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/flight_airport_credits"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/search_origin" android:textColor="@color/petrol" android:textStyle="bold"/>
+            <AutoCompleteTextView android:id="@+id/flight_origin" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_field" android:paddingHorizontal="12dp" android:minHeight="48dp" android:singleLine="true" android:inputType="textCapWords" android:maxLength="120" android:hint="@string/search_origin"/>
+            <Button android:id="@+id/flight_swap" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/flight_swap"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/search_destination" android:textColor="@color/petrol" android:textStyle="bold"/>
+            <AutoCompleteTextView android:id="@+id/flight_destination" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_field" android:paddingHorizontal="12dp" android:minHeight="48dp" android:singleLine="true" android:inputType="textCapWords" android:maxLength="120" android:hint="@string/search_destination"/>
+            <CheckBox android:id="@+id/flight_one_way" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/flight_one_way"/>
+            <Button android:id="@+id/flight_departure" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/outbound"/>
+            <Button android:id="@+id/flight_return" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/inbound"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/passengers" android:textColor="@color/petrol" android:textStyle="bold"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <Button android:id="@+id/flight_less" android:layout_width="56dp" android:layout_height="48dp"
+                    android:padding="0dp" android:text="−" android:contentDescription="@string/flight_remove_adult"/>
+                <TextView android:id="@+id/flight_adults" android:layout_width="56dp" android:layout_height="48dp"
+                    android:gravity="center" android:accessibilityLiveRegion="polite"/>
+                <Button android:id="@+id/flight_more" android:layout_width="56dp" android:layout_height="48dp"
+                    android:padding="0dp" android:text="+" android:contentDescription="@string/flight_add_adult"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/cabin" android:textColor="@color/petrol" android:textStyle="bold"/>
+            <Spinner android:id="@+id/flight_cabin" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:entries="@array/flight_external_cabins" android:contentDescription="@string/cabin"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/flight_compare" android:textColor="@color/petrol" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/flight_provider_note" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:id="@+id/flight_providers" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/flight_recent" android:textColor="@color/petrol" android:textStyle="bold"/>
+            <LinearLayout android:id="@+id/flight_history" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"/>
+            <Button android:id="@+id/flight_clear_recent" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/flight_clear_recent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

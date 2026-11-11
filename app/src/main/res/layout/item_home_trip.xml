@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="244dp" android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp" android:background="@drawable/bg_card"
+    android:orientation="vertical" android:padding="14dp">
+    <include layout="@layout/include_commons_photo"/>
+    <TextView android:id="@+id/home_trip_name" style="@style/Malinha.HomeHeading"
+        android:layout_marginTop="8dp" android:textSize="18sp"/>
+    <TextView android:id="@+id/home_trip_dates" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="4dp"
+        android:textColor="@color/petrol" android:textSize="14sp"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/home_trip_continue"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="@string/home_continue"
+        android:textColor="@color/petrol" app:backgroundTint="@color/sand"/>
+</LinearLayout>

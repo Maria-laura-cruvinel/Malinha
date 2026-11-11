@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/cream">
+  <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar"
+      android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+      android:background="@color/petrol" app:titleTextColor="@color/cream" app:navigationIconTint="@color/cream"/>
+  <TextView android:id="@+id/wizard_progress_label" android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:paddingHorizontal="24dp" android:paddingTop="16dp" android:textColor="@color/petrol"
+      android:textSize="20sp" android:textStyle="bold" android:accessibilityLiveRegion="polite"/>
+  <ProgressBar android:id="@+id/wizard_progress_bar" style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="24dp" android:max="4" android:progressTint="@color/coral"/>
+  <ScrollView android:id="@+id/wizard_scroll" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingBottom="16dp">
+      <LinearLayout android:id="@+id/wizard_destination_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:labelFor="@+id/input_destination" android:text="@string/destination" android:textSize="17sp" android:textStyle="bold"/>
+        <EditText android:id="@+id/input_destination" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="8dp" android:background="@drawable/bg_field" android:hint="@string/destination_hint" android:inputType="textCapWords" android:maxLength="120" android:singleLine="true" android:textSize="17sp"/>
+        <include layout="@layout/include_city_suggestions"/>
+      </LinearLayout>
+      <LinearLayout android:id="@+id/wizard_dates_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/wizard_weekend" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/wizard_weekend" />
+        <Button android:id="@+id/wizard_holiday" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/wizard_holiday" />
+        <Button android:id="@+id/wizard_later" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/wizard_later" /></LinearLayout></HorizontalScrollView>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:labelFor="@+id/input_start_date" android:text="@string/start_date" android:textSize="17sp" android:textStyle="bold"/>
+        <Button android:id="@+id/input_start_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/pick_date" android:contentDescription="@string/start_date" style="@style/Widget.Material3.Button.OutlinedButton"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:labelFor="@+id/input_end_date" android:text="@string/end_date" android:textSize="17sp" android:textStyle="bold"/>
+        <Button android:id="@+id/input_end_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/pick_date" android:contentDescription="@string/end_date" style="@style/Widget.Material3.Button.OutlinedButton"/>
+        <TextView android:id="@+id/wizard_nights" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="12dp" android:textColor="@color/petrol"/>
+      </LinearLayout>
+      <LinearLayout android:id="@+id/wizard_style_panel" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wizard_travelers" android:textStyle="bold"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+        <Button android:id="@+id/wizard_less" android:layout_width="48dp" android:layout_height="48dp" android:text="−" android:contentDescription="@string/wizard_less"/>
+        <TextView android:id="@+id/wizard_count" android:layout_width="56dp" android:layout_height="48dp" android:gravity="center" android:accessibilityLiveRegion="polite"/>
+        <Button android:id="@+id/wizard_more" android:layout_width="48dp" android:layout_height="48dp" android:text="+" android:contentDescription="@string/wizard_more"/></LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/wizard_pace" android:labelFor="@+id/wizard_pace" android:textStyle="bold"/>
+        <Spinner android:id="@+id/wizard_pace" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:entries="@array/wizard_paces"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:labelFor="@+id/input_budget" android:text="@string/budget" android:textSize="17sp" android:textStyle="bold"/>
+        <EditText android:id="@+id/input_budget" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:layout_marginTop="8dp" android:background="@drawable/bg_field" android:hint="@string/budget_hint" android:inputType="numberDecimal" android:maxLength="120" android:singleLine="true" android:textSize="17sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/interests" android:textStyle="bold" android:textSize="20sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/interests_hint" android:textSize="15sp"/>
+        <CheckBox android:id="@+id/interest_culture" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/culture" android:textSize="17sp" android:buttonTint="@color/coral"/>
+        <CheckBox android:id="@+id/interest_food" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/food" android:textSize="17sp" android:buttonTint="@color/coral"/>
+        <CheckBox android:id="@+id/interest_nature" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/nature" android:textSize="17sp" android:buttonTint="@color/coral"/>
+        <CheckBox android:id="@+id/interest_beach" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/beach" android:textSize="17sp" android:buttonTint="@color/coral"/>
+        <CheckBox android:id="@+id/interest_shopping" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/shopping" android:textSize="17sp" android:buttonTint="@color/coral"/>
+        <CheckBox android:id="@+id/interest_fun" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/fun" android:textSize="17sp" android:buttonTint="@color/coral"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingHorizontal="16dp" android:paddingVertical="8dp">
+    <Button android:id="@+id/wizard_back" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="48dp" android:text="@string/back" android:layout_weight="1"/>
+    <Button android:id="@+id/create_itinerary" android:layout_width="0dp" android:layout_height="48dp"
+        android:layout_weight="1" android:layout_marginStart="8dp" android:text="@string/wizard_continue"/>
+  </LinearLayout>
+</LinearLayout>

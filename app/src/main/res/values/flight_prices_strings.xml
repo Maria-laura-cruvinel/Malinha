@@ -1,0 +1,15 @@
+<resources>
+ <string name="cached_flights">Consultar preços indicativos</string>
+ <string name="flight_iata_error">Para preços indicativos, use códigos IATA de 3 letras: GRU, GIG, LIS, por exemplo.</string>
+ <string name="flight_scope">Esta consulta é uma referência individual, sem cotação para grupos ou filtro de classe. Para sua seleção, use a pesquisa externa.</string>
+ <string name="flight_cache_notice">A partir de • preços de buscas recentes, sem garantia de disponibilidade. Consulte o preço atual antes de comprar.</string>
+ <string name="flight_loading">Consultando preços em cache…</string>
+ <string name="flight_unconfigured">A consulta de preços ainda não está configurada. Você pode continuar pesquisando no serviço externo.</string>
+ <string name="flight_error">Não foi possível consultar os preços. Verifique a conexão ou tente novamente mais tarde.</string>
+ <string name="flight_empty">Não há preços em cache para estas datas e rota. Isso não significa que não existam voos.</string>
+ <string name="flight_queried">Consulta realizada em %1$s (UTC). Este horário não é a data em que a tarifa foi encontrada.</string>
+ <string name="flight_from">A partir de %1$s</string>
+ <string name="flight_details">Ida: %1$s\nVolta: %2$s\nCompanhia (IATA): %3$s</string>
+ <string name="flight_confirm_price">Conferir preço no Aviasales</string>
+ <string name="flight_retry">Tentar novamente</string>
+</resources>

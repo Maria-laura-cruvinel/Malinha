@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+ <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/coral" app:titleTextColor="@color/cream"/>
+ <TextView android:id="@+id/map_query" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:textSize="20sp" android:textStyle="bold"/>
+ <TextView android:id="@+id/map_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp" android:paddingBottom="12dp" android:text="@string/map_searching" android:textSize="16sp" android:accessibilityLiveRegion="polite"/>
+ <androidx.fragment.app.FragmentContainerView android:id="@+id/map_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+ <Button android:id="@+id/map_retry" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:text="@string/map_retry"/>
+ <Button android:id="@+id/map_directions" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginHorizontal="16dp" android:text="@string/local_directions"/>
+</LinearLayout>

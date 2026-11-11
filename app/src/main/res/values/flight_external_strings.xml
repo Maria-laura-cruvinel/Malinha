@@ -1,0 +1,34 @@
+<resources>
+    <string name="flight_swap">Inverter origem e destino</string>
+    <string name="flight_one_way">Somente ida</string>
+    <string name="flight_compare">Comparar voos em:</string>
+    <string name="flight_provider_note">Preços e disponibilidade são informados pelo serviço escolhido.</string>
+    <string name="flight_recent">Pesquisas recentes</string>
+    <string name="flight_clear_recent">Limpar histórico</string>
+    <string name="flight_dates_error">Escolha uma data de ida válida e, se houver volta, uma data igual ou posterior à ida.</string>
+    <string name="flight_manual_filters">Preencha os dados na página de busca do serviço.</string>
+    <string name="flight_remove_adult">Diminuir passageiros adultos</string>
+    <string name="flight_add_adult">Aumentar passageiros adultos</string>
+    <string-array name="flight_external_cabins"><item>Econômica</item><item>Econômica premium</item><item>Executiva</item><item>Primeira classe</item></string-array>
+    <string-array name="flight_providers"><item>Google Voos</item><item>Skyscanner</item><item>Kayak</item><item>Decolar</item><item>Momondo</item></string-array>
+    <string name="flight_date_label">%1$s · %2$s</string>
+    <string name="flight_history_route">%1$s → %2$s · %3$s</string>
+    <string name="flight_reservations">Meus voos</string>
+    <string name="flight_add_reservation">Adicionar reserva</string>
+    <string name="flight_edit_reservation">Editar reserva</string>
+    <string name="flight_no_reservations">Suas reservas anotadas vão aparecer aqui.</string>
+    <string name="flight_airline">Companhia aérea</string>
+    <string name="flight_number">Número do voo</string>
+    <string name="flight_localizer">Localizador da reserva</string>
+    <string name="flight_show_localizer">Mostrar localizador</string>
+    <string name="flight_notes">Observações</string>
+    <string name="flight_reservation_departure">Partida · data e hora locais</string>
+    <string name="flight_reservation_arrival">Chegada · data e hora locais (opcional)</string>
+    <string name="reservation_departure_label">Partida</string>
+    <string name="reservation_arrival_label">Chegada</string>
+    <string name="flight_reservation_required">Informe a origem, o destino e a data de partida.</string>
+    <string name="flight_reservation_delete">Excluir esta reserva?</string>
+    <string name="flight_airport_credits">Créditos dos aeroportos</string>
+    <string name="flight_airport_credit_text">Base de aeroportos OpenFlights, sob a licença ODbL 1.0. Dados filtrados por código IATA e convertidos para TSV.</string>
+    <string name="flight_airport_credit_source">Ver fonte e licença</string>
+</resources>

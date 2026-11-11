@@ -1,0 +1,3 @@
+# Copy this file to maps.properties in the Android Studio project root.
+# Do not commit the real key. Restrict it to this Android app + certificate SHA-1.
+MAPS_API_KEY=YOUR_API_KEY

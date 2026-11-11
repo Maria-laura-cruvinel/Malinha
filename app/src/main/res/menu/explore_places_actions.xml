@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/local_more" android:title="@string/local_more"
+        android:visible="false" app:showAsAction="never"/>
+    <item android:id="@+id/local_edit_search" android:title="@string/local_edit_search"
+        android:visible="false" app:showAsAction="never"/>
+</menu>

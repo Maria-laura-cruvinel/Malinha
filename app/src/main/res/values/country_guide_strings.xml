@@ -1,0 +1,30 @@
+<resources>
+ <string name="guide_show_calendar">Ver calendário</string>
+ <string name="guide_show_country">Dados do país e filtros</string>
+ <string name="country_guide">Países e feriados</string>
+ <string name="guide_country">País</string>
+ <string name="guide_year">Ano</string>
+ <string name="guide_consult">Consultar país e feriados</string>
+ <string name="guide_initial">Selecione um país e um ano para consultar.</string>
+ <string name="guide_year_error">Informe um ano entre 1900 e 2100.</string>
+ <string name="guide_loading_country">Consultando informações do país…</string>
+ <string name="guide_loading_holidays">Consultando calendário…</string>
+ <string name="guide_key_missing">As informações de idioma, moeda, fuso e telefone precisam da chave do REST Countries v5. Os feriados podem ser consultados sem ela.</string>
+ <string name="guide_country_error">Não foi possível obter os dados do país. Verifique a conexão e a configuração do REST Countries.</string>
+ <string name="guide_holiday_error">Não foi possível obter os feriados. Confira a conexão; a cobertura varia conforme o país e o ano.</string>
+ <string name="guide_no_holidays">Nenhuma data retornada pelo Nager para o país e ano selecionados.</string>
+ <string name="guide_holiday_count">%1$d datas retornadas</string>
+ <string name="guide_not_informed">Não informado</string>
+ <string name="guide_languages">Idiomas: %1$s</string>
+ <string name="guide_currencies">Moedas: %1$s</string>
+ <string name="guide_timezones">Fusos UTC informados: %1$s</string>
+ <string name="guide_calling_codes">Códigos telefônicos internacionais: %1$s</string>
+ <string name="guide_national">Abrangência nacional</string>
+ <string name="guide_regional">Abrangência regional: %1$s</string>
+ <string name="guide_holiday_types">Tipos informados pela API: %1$s</string>
+ <string name="guide_weekends">Sugestões de fins de semana prolongados</string>
+ <string name="guide_weekend_note">Cálculo local com feriados nacionais do tipo Public retornados pelo Nager e descanso aos sábados e domingos. Considera apenas datas dentro do ano, sem emendas, feriados regionais ou outras escalas de trabalho. Confirme o calendário aplicável.</string>
+ <string name="guide_weekend_days">%1$d dias consecutivos · sugestão calculada</string>
+ <string name="guide_no_weekends">Nenhuma combinação encontrada com esse critério.</string>
+ <string name="guide_notice">As fontes podem ter dados incompletos. Datas regionais e tipos como observância ou ponto facultativo não equivalem automaticamente a folga.</string>
+</resources>

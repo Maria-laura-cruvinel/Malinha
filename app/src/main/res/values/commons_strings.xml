@@ -1,0 +1,5 @@
+<resources>
+    <string name="commons_credit">%1$s · %2$s · Wikimedia Commons</string>
+    <string name="commons_source">Ver arquivo no Wikimedia Commons</string>
+    <string name="commons_license">Ver licença %1$s</string>
+</resources>

@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+ <com.google.android.material.appbar.MaterialToolbar android:id="@+id/planning_toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/coral" app:titleTextColor="@color/cream"/>
+ <ScrollView android:id="@+id/guide_form" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_country" android:labelFor="@+id/guide_country" android:textSize="17sp" android:textStyle="bold"/>
+   <Spinner android:id="@+id/guide_country" android:layout_width="match_parent" android:layout_height="56dp"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/guide_year" android:labelFor="@+id/guide_year" android:textSize="17sp" android:textStyle="bold"/>
+   <EditText android:id="@+id/guide_year" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:background="@drawable/bg_field" android:singleLine="true" android:inputType="number" android:maxLength="4" android:textSize="17sp"/>
+   <Button android:id="@+id/guide_consult" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/guide_consult"/>
+   <TextView android:id="@+id/guide_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:background="@drawable/bg_card" android:text="@string/guide_initial" android:textSize="17sp" android:accessibilityLiveRegion="polite"/>
+   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="12dp" android:text="@string/guide_notice" android:textSize="15sp"/>
+  </LinearLayout>
+ </ScrollView>
+ <TextView android:id="@+id/guide_calendar_status" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingHorizontal="16dp" android:paddingVertical="8dp"
+    android:textSize="17sp" android:accessibilityLiveRegion="polite"/>
+ <androidx.recyclerview.widget.RecyclerView android:id="@+id/guide_calendar"
+    android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+    android:paddingHorizontal="16dp" android:scrollbars="vertical" android:visibility="gone"/>
+ <Button android:id="@+id/guide_toggle_calendar" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:layout_marginHorizontal="16dp"
+    android:text="@string/guide_show_calendar" android:visibility="gone"/>
+</LinearLayout>
